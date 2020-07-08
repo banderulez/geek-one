@@ -183,6 +183,7 @@ body {
     background-color: #ffffff;
     color: #998675;
 }
+
 .slider-button-link:active {
     background-color: #998675;
     color: #ffffff;
@@ -344,7 +345,7 @@ body {
     line-height: 1.2;
     font-weight: 400;
     color: #ffffff;
-    
+
 }
 
 .purchase-p {
@@ -371,14 +372,321 @@ body {
     background-color: #998675;
     border-radius: 3.0px;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
-    
+
 }
 
 .purchase-button:hover {
     background-color: #ffffff;
     color: #998675;
 }
+
 .purchase-button:active {
     background-color: #998675;
     color: #ffffff;
+}
+
+.latest {
+    margin: 0 auto;
+    width: 1170px;
+    height: 1160px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+
+}
+
+.latest-title {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.latest-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    display: block;
+    box-sizing: border-box;
+}
+
+.latest-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    text-align: center;
+    width: 757px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    color: #8c8c8c;
+    min-width: 70px;
+    min-height: 32px;
+    border: 1.0px solid #ebebeb;
+    border-radius: 3.0px;
+    margin: 0 10px 0 0;
+}
+
+.button:hover {
+    background-color: #998675;
+    color: #ffffff;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.card-link {
+    width: 370px;
+    height: 337px;
+    background-color: #fbfaf8;
+    margin: 0 30px 30px 0;
+    position: relative;
+}
+
+.card-link:hover {
+    background-color: #362f2d;
+
+}
+
+.card-link:hover img {
+    filter: brightness(20%);
+
+}
+
+.card-link:before {
+    content: "";
+    position: absolute;
+    border: 15px solid transparent;
+    border-bottom: 15px solid #fbfaf8;
+    top: 207px;
+    left: 20px;
+}
+
+.card-link:hover .card-link:before {
+    background-color: #362f2d;
+}
+
+.card-link:nth-child(3) {
+    margin: 0 0 30px 0;
+}
+
+.card-link:nth-child(6) {
+    margin: 0 0 30px 0;
+}
+
+.card-link:hover .chain {
+    display: block;
+}
+
+.card-link:hover .search {
+    display: block;
+}
+
+.card-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #c7b299;
+    display: block;
+    padding-left: 25px;
+    padding-top: 25px;
+    box-sizing: border-box;
+
+}
+
+.card-p {
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #d1d1d1;
+    display: block;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+}
+
+.chain,
+.search {
+    width: 30px;
+    height: 30px;
+    display: none;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 45%;
+}
+
+.chain {
+    background-image: url(../img/chain.svg);
+    left: 40%;
+}
+
+.chain:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.search {
+    background-image: url(../img/search.svg);
+    right: 40%;
+}
+
+.search:hover {
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.load-btn {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 170px;
+    height: 50px;
+    background-color: #998675;
+    border-radius: 3.0px;
+}
+
+.load-btn:hover {
+    background-color: #ffffff;
+    color: #998675;
+}
+
+.video {
+    width: 1920;
+    min-height: 705px;
+    position: relative;
+    color: #fff;
+    display: flex;
+}
+
+.video-file {
+    width: 100%;
+    height: 100v;
+    object-fit: cover;
+}
+
+.video-title {
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+
+.video-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #ffffff;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.video-p {
+    text-align: center;
+    width: 552px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.video-btn:hover {
+    background-color: #998675;
+    border-radius: 50%;
+
+}
+
+.excellent {
+    display: flex;
+    padding-left: 900px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 695px;
+    background-color: #fbfaf8;
+    background-image: url(../img/iphone_in_hand_10962.png);
+    background-repeat: no-repeat;
+    background-position: bottom left 350px;
+}
+
+.excellent-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #555555;
+    display: block;
+
+}
+
+.excellent-p {
+    width: 657px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 300;
+    color: #8c8c8c;
+    display: block;
+}
+
+.excellent-list {
+
+    padding-left: 85px;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.excellent-list-item {
+    padding-top: 10px;
+    position: relative;
+}
+
+.excellent-list-item:before {
+    content: "";
+    display: block;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    top: 10px;
+    left: -40px;
+    background-image: url(../img/10972.svg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    box-sizing: border-box;
 }
