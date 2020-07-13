@@ -926,10 +926,12 @@ body {
     left: 105px;
     position: absolute;
 }
-.recent-box-btn:hover  {
+
+.recent-box-btn:hover {
     color: #ffffff;
 }
-.recent-box-btn:active  {
+
+.recent-box-btn:active {
     color: #8c8c8c;
 }
 
@@ -977,10 +979,129 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .brands-logo {
     width: 1110px;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.footer {
+    height: 508px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-logo-icon {
+    fill: #ffffff;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    min-height: 284px;
+    width: 548px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-logo-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.footer-logo-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #d1d1d1;
+
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts-h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.posts-h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+}
+
+.posts-p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.twitter {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.twitter-h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.twitter-txt {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+}
+
+.twitter-time {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #363636;
+}
+
+.widget {
+    
+    width: 280px;
+}
+.widget-h {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ffffff;
+}
+.widget-box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.widget-img {
+    padding-right: 5px;
+    padding-bottom: 5px;
 }
