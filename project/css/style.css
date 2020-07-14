@@ -988,6 +988,10 @@ body {
     align-items: center;
 }
 
+.brands-img:hover {
+    filter: brightness(60%);
+}
+
 .footer {
     padding-top: 50px;
     height: 508px;
@@ -1038,12 +1042,15 @@ body {
     color: #d1d1d1;
 
 }
+
 .footer-logo-btn:hover {
-    color:#c7b299;
+    color: #c7b299;
 }
+
 .footer-logo-btn:active {
-    color:#ffffff;
+    color: #ffffff;
 }
+
 .footer-logo-btn:before {
     content: "";
     border: 5px solid transparent;
@@ -1078,13 +1085,17 @@ body {
     font-weight: 300;
     color: #363636;
     box-sizing: border-box;
-    }
+    text-decoration: none;
+}
+
 .posts-h2:hover {
     color: #ffffff;
 }
-.posts-h2:hover + .posts-p {
+
+.posts-h2:hover ~ .posts-p {
     color: #c7b299;
 }
+
 .posts-h2:active {
     color: #c7b299;
 }
@@ -1101,6 +1112,7 @@ body {
     border-bottom: 2px solid #252525;
     box-sizing: border-box;
 }
+
 .posts-p:hover {
     color: #c7b299;
 }
@@ -1134,13 +1146,17 @@ body {
     font-weight: 300;
     color: #555555;
     box-sizing: border-box;
+    text-decoration: none;
 }
+
 .twitter-txt:hover {
     color: #c7b299;
 }
+
 .twitter-txt:hover + .twitter-time {
     color: #ffffff;
 }
+
 .twitter-time {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
@@ -1150,6 +1166,19 @@ body {
     padding-bottom: 20px;
     border-bottom: 2px solid #252525;
     box-sizing: border-box;
+}
+
+.twit-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #00bff3;
+}
+
+.twit-bit {
+    
+    color: #959595;
 }
 
 .widget {
@@ -1177,3 +1206,40 @@ body {
     padding-bottom: 10px;
     box-sizing: border-box;
 }
+
+.widget-img:hover {
+    filter: brightness(60%);
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1920px;
+    height: 111px;
+    background-color: #111111;
+    padding-left: 370px;
+    padding-right: 370px;
+    box-sizing: border-box;
+}
+.foot-right-link,
+.foot-left-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 300;
+    color: #555555;
+    text-decoration: none;
+}
+.foot-left-link:nth-child(3) {
+    color: #c7b299;
+}
+.foot-left-word {
+    color: #959595;
+}
+.foot-right-word {
+    color: #959595;
+}
+
+
+ 
