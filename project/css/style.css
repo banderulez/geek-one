@@ -989,24 +989,28 @@ body {
 }
 
 .footer {
+    padding-top: 50px;
     height: 508px;
     background-color: #191919;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    justify-content: center;
+    box-sizing: border-box;
+}
 
+
+.footer-logo {
+    position: relative;
+    min-height: 284px;
+    width: 258px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0 40px 0 0;
 }
 
 .footer-logo-icon {
     fill: #ffffff;
-}
-
-.footer-logo {
-    margin: 0 auto;
-    min-height: 284px;
-    width: 548px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
 }
 
 .footer-logo-txt {
@@ -1017,6 +1021,15 @@ body {
     color: #555555;
 }
 
+.footer-logo-txt:hover {
+    color: #c7b299;
+}
+
+.footer-logo-txt:active {
+    color: #ffffff;
+}
+
+
 .footer-logo-btn {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -1025,10 +1038,26 @@ body {
     color: #d1d1d1;
 
 }
+.footer-logo-btn:hover {
+    color:#c7b299;
+}
+.footer-logo-btn:active {
+    color:#ffffff;
+}
+.footer-logo-btn:before {
+    content: "";
+    border: 5px solid transparent;
+    border-left: 8px solid #d1d1d1;
+    top: 270px;
+    left: 83px;
+    position: absolute;
+}
 
 .posts {
     display: flex;
     flex-direction: column;
+    width: 271px;
+    margin: 0 40px 0 0;
 }
 
 .posts-h1 {
@@ -1037,28 +1066,54 @@ body {
     line-height: 1.2;
     font-weight: 700;
     color: #ffffff;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .posts-h2 {
+    padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 20px;
     font-weight: 300;
     color: #363636;
+    box-sizing: border-box;
+    }
+.posts-h2:hover {
+    color: #ffffff;
+}
+.posts-h2:hover + .posts-p {
+    color: #c7b299;
+}
+.posts-h2:active {
+    color: #c7b299;
 }
 
+
 .posts-p {
+    margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     color: #555555;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #252525;
+    box-sizing: border-box;
+}
+.posts-p:hover {
+    color: #c7b299;
+}
+
+.posts-p:active {
+    color: #ffffff;
 }
 
 .twitter {
     display: flex;
     flex-direction: column;
-    
+    width: 272px;
+    margin: 0 40px 0 0;
 }
 
 .twitter-h1 {
@@ -1067,28 +1122,40 @@ body {
     line-height: 1.2;
     font-weight: 700;
     color: #ffffff;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
 
 .twitter-txt {
+    padding-top: 20px;
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     line-height: 20px;
     font-weight: 300;
     color: #555555;
+    box-sizing: border-box;
 }
-
+.twitter-txt:hover {
+    color: #c7b299;
+}
+.twitter-txt:hover + .twitter-time {
+    color: #ffffff;
+}
 .twitter-time {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
     line-height: 20px;
     font-weight: 300;
     color: #363636;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #252525;
+    box-sizing: border-box;
 }
 
 .widget {
-    
     width: 280px;
 }
+
 .widget-h {
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
@@ -1096,12 +1163,17 @@ body {
     font-weight: 700;
     color: #ffffff;
 }
+
 .widget-box {
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
+
 .widget-img {
-    padding-right: 5px;
-    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
